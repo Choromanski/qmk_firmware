@@ -62,11 +62,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_COLEMAK] = LAYOUT_preonic_grid( \
-	TD(G1),		KC_2,		KC_3,		KC_4,		KC_5,		KC_6,		KC_7,	KC_8,	KC_9,		KC_0,		KC_MINS,	TD(EQ),  \
-	KC_TAB,		KC_Q,		KC_W,		KC_F,		KC_P,		KC_G,		KC_J,	KC_L,	KC_U,		KC_Y,		KC_SCLN,	TD(BRC), \
-	KC_ESC,		KC_A,		KC_R,		KC_S,		KC_T,		KC_D,		KC_H,	KC_N,	KC_E,		KC_I,		KC_O,		KC_QUOT,   \
-	KC_LSFT,	CTL_T(KC_Z),KC_X,		KC_C,		KC_V,		KC_B,		KC_K,	KC_M,	KC_COMM,	KC_DOT,		KC_SLSH,	TG(_NUMPAD), \
-	OSL(_SYMB),	MO(_FUNCT),	KC_LGUI,	KC_LALT,	KC_DEL,		KC_BSPC,	KC_SPC,	KC_ENT,	KC_LEFT,	KC_DOWN,	KC_UP,		KC_RGHT \
+	TD(G1),			KC_2,			KC_3,		KC_4,		KC_5,		KC_6,		KC_7,	KC_8,	KC_9,		KC_0,		KC_MINS,	TD(EQ),  \
+	KC_TAB,			KC_Q,			KC_W,		KC_F,		KC_P,		KC_G,		KC_J,	KC_L,	KC_U,		KC_Y,		KC_SCLN,	TD(BRC), \
+	KC_ESC,			KC_A,			KC_R,		KC_S,		KC_T,		KC_D,		KC_H,	KC_N,	KC_E,		KC_I,		KC_O,		KC_QUOT,   \
+	KC_LSFT,		CTL_T(KC_Z),	KC_X,		KC_C,		KC_V,		KC_B,		KC_K,	KC_M,	KC_COMM,	KC_DOT,		KC_SLSH,	TG(_NUMPAD), \
+	CTL_T(_FUNCT),	OSL(_SYMB),	KC_LGUI,	KC_LALT,	KC_DEL,		KC_BSPC,	KC_SPC,	KC_ENT,	KC_LEFT,	KC_DOWN,	KC_UP,		KC_RGHT \
 ),
 
 /* Qwerty
@@ -83,11 +83,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_preonic_grid( \
-	TD(G1),		KC_2,		KC_3,		KC_4,		KC_5,		KC_6,		KC_7,	KC_8,	KC_9,		KC_0,		KC_MINS,	TD(EQ),  \
-	KC_TAB,		KC_Q,		KC_W,		KC_E,		KC_R,		KC_T,		KC_Y,	KC_U,	KC_I,		KC_O,		KC_P,		TD(BRC),   \
-	KC_ESC,		KC_A,		KC_S,		KC_D,		KC_F,		KC_G,		KC_H,	KC_J,	KC_K,		KC_L,		KC_SCLN,	KC_QUOT, \
-	KC_LSFT,	CTL_T(KC_Z),KC_X,		KC_C,		KC_V,		KC_B,		KC_N,	KC_M,	KC_COMM,	KC_DOT,		KC_SLSH,	TG(_NUMPAD), \
-	OSL(_SYMB),	MO(_FUNCT),	KC_LGUI,	KC_LALT,	KC_DEL,		KC_BSPC,	KC_SPC,	KC_ENT,	KC_LEFT,	KC_DOWN,	KC_UP,		KC_RGHT  \
+	TD(G1),			KC_2,		KC_3,		KC_4,		KC_5,		KC_6,		KC_7,	KC_8,	KC_9,		KC_0,		KC_MINS,	TD(EQ),  \
+	KC_TAB,			KC_Q,		KC_W,		KC_E,		KC_R,		KC_T,		KC_Y,	KC_U,	KC_I,		KC_O,		KC_P,		TD(BRC),   \
+	KC_ESC,			KC_A,		KC_S,		KC_D,		KC_F,		KC_G,		KC_H,	KC_J,	KC_K,		KC_L,		KC_SCLN,	KC_QUOT, \
+	KC_LSFT,		CTL_T(KC_Z),KC_X,		KC_C,		KC_V,		KC_B,		KC_N,	KC_M,	KC_COMM,	KC_DOT,		KC_SLSH,	TG(_NUMPAD), \
+	CTL_T(_FUNCT),	OSL(_SYMB),	KC_LGUI,	KC_LALT,	KC_DEL,		KC_BSPC,	KC_SPC,	KC_ENT,	KC_LEFT,	KC_DOWN,	KC_UP,		KC_RGHT  \
 ),
 
 /* Function
@@ -129,7 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	_______,	KC_ACL0,	KC_BTN1,	KC_MS_U,	KC_BTN2,	KC_WH_U,	KC_ACL0,	KC_7,		KC_8,		KC_9,		KC_PLUS,	KC_RBRC, \
 	_______,	KC_ACL1,	KC_MS_L,	KC_MS_D,	KC_MS_R,	KC_WH_D,	KC_ACL1,	KC_4,		KC_5,		KC_6,		KC_PLUS,	_______, \
 	_______,	KC_ACL2,	KC_VOLU,	KC_MPRV,	KC_MPLY,	KC_MNXT,	KC_ACL2,	KC_1,		KC_2,		KC_3,		KC_ENT,		TG(_NUMPAD), \
-	OSL(_SYMB),	_______,	KC_VOLD,	KC_MUTE,	_______,	_______,	_______,	KC_0,		KC_0,		KC_DOT,		KC_ENT,		_______ \
+	_______,	OSL(_SYMB),	KC_VOLD,	KC_MUTE,	_______,	_______,	_______,	KC_0,		KC_0,		KC_DOT,		KC_ENT,		_______ \
 ),
 
 /* Symbol
@@ -150,7 +150,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	AU_TOG,		KC_PIPE,	KC_PLUS,	KC_LABK,	KC_RABK,	KC_HASH,	KC_TILD,	KC_LPRN,	KC_RPRN,	KC_BSLS,	KC_COLN,	_______, \
 	_______,	KC_EXLM,	KC_MINS,	KC_EQL,		KC_PERC,	KC_AT,		KC_UNDS,	KC_LCBR,	KC_RCBR,	KC_SLSH,	KC_QUES,	_______, \
 	MUSII,		KC_ASTR,	KC_AMPR,	KC_SLSH,	KC_DLR,		KC_CIRC,	KC_PIPE,	KC_LBRC,	KC_RBRC,	_______,	_______,	_______, \
-	_______,	FUNCT,		COLE,		QWER,		_______,	_______,	_______,	_______,	_______,	_______,	_______,	_______  \
+	FUNCT,		_______,	COLE,		QWER,		_______,	_______,	_______,	_______,	_______,	_______,	_______,	_______  \
 ),
 
 /* Music
